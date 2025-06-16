@@ -31,4 +31,17 @@ public class TicketPriceServiceTest {
 
     }
 
+    @Test
+    public void shouldCalculateTicketPriceForGoldPassenger_withValueAboveLimit() throws Exception {
+        TickerPriceService tickerPriceService = new TickerPriceService();
+
+        Passenger passenger = new Passenger("Maria", PassengerType.GOLD);
+        Flight flight = new Flight("São Paulo", "Rio de Janeiro", 600.00);
+
+        double price = tickerPriceService.calculate(passenger, flight);
+
+        // Assert that the price is calculated correctly for a GOLD passenger
+        assertEquals(510.0, price, 0.0001);
+    }
+
 }
