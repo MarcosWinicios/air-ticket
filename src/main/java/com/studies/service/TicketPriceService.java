@@ -15,7 +15,7 @@ import com.studies.exception.InvalidPassengerTypeException;
  * *   - If the flight price is above 700.0, a 10% discount is applied.
  * *   - Otherwise, a 6% discount is applied.
  */
-public class TickerPriceService {
+public class TicketPriceService {
     public double calculate(Passenger passenger, Flight flight) {
         if(passenger.getType().equals(PassengerType.GOLD)){
             if(flight.getPrice() > 500.0) {

@@ -10,15 +10,15 @@ import static org.junit.Assert.assertEquals;
 
 public class TicketPriceServiceTest {
 
-    private TickerPriceService tickerPriceService;
+    private TicketPriceService ticketPriceService;
 
     @Before
     public void setUp() {
-        tickerPriceService = new TickerPriceService();
+        ticketPriceService = new TicketPriceService();
     }
 
     private void assertTicketPrice(Passenger passenger, Flight flight, double expectedPrice) {
-        double price = tickerPriceService.calculate(passenger, flight);
+        double price = ticketPriceService.calculate(passenger, flight);
         assertEquals(expectedPrice, price, 0.0001);
     }
 
