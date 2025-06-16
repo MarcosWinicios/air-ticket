@@ -18,15 +18,6 @@ public class TicketPriceServiceTest {
     }
 
     @Test
-    public void shouldAllowCallingValueCalculation() throws Exception {
-        Passenger passenger = new Passenger("João", PassengerType.GOLD);
-
-        Flight flight = new Flight("São Paulo", "Rio de Janeiro", 100.00);
-
-        double price = tickerPriceService.calculate(passenger, flight);
-    }
-
-    @Test
     public void shouldCalculateTicketPriceForGoldPassenger_withValueBelowLimit() throws Exception {
         TickerPriceService tickerPriceService = new TickerPriceService();
 
