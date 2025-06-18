@@ -4,5 +4,5 @@ import com.studies.entity.Flight;
 
 public interface TicketPriceCalculator {
 
-    public double calculate(Flight flight);
+    double calculate(Flight flight);
 }
