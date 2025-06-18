@@ -1,4 +1,4 @@
-package com.studies;
+package com.studies.entity;
 
 import com.studies.service.GoldTicketPrice;
 import com.studies.service.SilverTicketPrice;

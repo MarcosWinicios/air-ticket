@@ -1,8 +1,8 @@
 package com.studies.service;
 
-import com.studies.Flight;
-import com.studies.Passenger;
-import com.studies.PassengerType;
+import com.studies.entity.Flight;
+import com.studies.entity.Passenger;
+import com.studies.entity.PassengerType;
 import org.junit.Before;
 import org.junit.Test;
 

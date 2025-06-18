@@ -1,7 +1,6 @@
 package com.studies.service;
 
-import com.studies.Flight;
-import com.studies.Passenger;
+import com.studies.entity.Flight;
 
 public interface TicketPriceCalculator {
 

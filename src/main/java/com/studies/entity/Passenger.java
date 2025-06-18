@@ -1,4 +1,4 @@
-package com.studies;
+package com.studies.entity;
 
 public class Passenger {
     private String name;

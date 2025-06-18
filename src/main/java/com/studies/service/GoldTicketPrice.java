@@ -1,6 +1,6 @@
 package com.studies.service;
 
-import com.studies.Flight;
+import com.studies.entity.Flight;
 
 public class GoldTicketPrice implements  TicketPriceCalculator{
 
